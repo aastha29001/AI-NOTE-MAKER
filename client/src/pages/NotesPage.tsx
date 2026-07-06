@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, Upload, FileText, SortAsc } from 'lucide-react';
+import { Search, Upload, FileText } from 'lucide-react';
 import toast from 'react-hot-toast';
 import NoteCard from '../components/NoteCard';
 import LoadingSpinner from '../components/LoadingSpinner';

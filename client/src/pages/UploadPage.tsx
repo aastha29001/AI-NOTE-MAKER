@@ -1,7 +1,7 @@
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDropzone } from 'react-dropzone';
-import { Upload, FileText, X, CheckCircle, AlertCircle, FileUp, Loader2 } from 'lucide-react';
+import { Upload, FileText, X, CheckCircle, FileUp, Loader2 } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { uploadApi } from '../api/notesApi';
 import type { NoteStyle } from '../types';

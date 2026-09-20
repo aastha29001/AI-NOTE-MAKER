@@ -10,8 +10,12 @@ export const createGroqClient = () => {
 
   return new ChatGroq({
     apiKey: process.env.GROQ_API_KEY,
-    model: 'llama-3.3-70b-versatile', // Free model on Groq
+    model: 'qwen/qwen3.8-27b', // Free model on Groq
     temperature: 0.3,
     maxTokens: 4096,
+    // Disable thinking mode for clean output (no <think> tags)
+    modelKwargs: {
+      thinking: { type: 'disabled' },
+    },
   });
 };
